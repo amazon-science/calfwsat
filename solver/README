@@ -1,0 +1,18 @@
+This is an AWS-ARG-ATS-Science intern project developed by the intern
+Joseph Reeves (jsreeves@) and manager Benjamin Kiesl (benkiesl@).
+
+This code extends the solver yal-lin (Md Solimul Chowdhury, Cayden Codel, Marijn Heule), found at the [Github repository](https://github.com/solimul/yal-lin), which itself extended the solver [yalsat](https://github.com/arminbiere/yalsat) (Armin Biere).
+
+Build Commands
+-----------------
+./configure.sh
+make
+
+Run Instructions:
+-----------------
+ Run the default version with the command: 
+ 
+ `./ddfw-card-sat -v --cutoff=<#flips> --maxtries=<#restarts> [--option=<val>] <Formula> [seed]`
+
+ See outer Readme for more details.
+
