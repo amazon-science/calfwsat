@@ -13,7 +13,6 @@ then
 # build solver
 cd solver
 ./configure.sh -g && make
-cp yalsat ../ddfw-card-sat
 cd ../
 
 else
@@ -21,7 +20,6 @@ else
 # build solver
 cd solver
 ./configure.sh && make 
-cp yalsat ../ddfw-card-sat
 cd ../
 
 fi
