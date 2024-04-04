@@ -88,7 +88,7 @@ static int logging, checking;
 #else
 #define YALS yals
 #define WINNER yals
-#define NAME "YalSAT"
+#define NAME "CaLFwSAT"
 #endif
 
 static double average (double a, double b) { return b ? a/b : 0; }
@@ -363,7 +363,7 @@ static void resetsighandlers (void) {
 
 static void caughtsigmsg (int sig) {
   if (!verbose) return;
-  printf ("c\nc [yalsat] CAUGHT SIGNAL %d\nc\n", sig);
+  printf ("c\nc [CaLFwSAT] CAUGHT SIGNAL %d\nc\n", sig);
   fflush (stdout);
 }
 
@@ -624,7 +624,7 @@ static void usage () {
     "usage: palsat [<option> ...] [<file> [<seed>]]\n");
 #else
   printf (
-    "usage: yalsat [<option> ...] [<file> [<seed> [<flips> [<mems>]]]]\n");
+    "usage: CaLFwSAT -v --cutoff=<#flips> --maxtries=<#restarts> [--option=<val>] <Formula> [seed]\n");
 #endif
   printf ("\n");
   printf ("main options: \n");
@@ -684,8 +684,9 @@ int main (int argc, char** argv) {
   printf ("c PalSAT Yet Another Local Search Solver\n");
   printf ("c Parallel Simple Portfolio Version\n");
 #else
-  printf ("c YalSAT Yet Another Local Search Solver\n");
-  printf ("c Sequential Standalone Version\n");
+  // printf ("c YalSAT Yet Another Local Search Solver\n");
+  printf ("c CaLFwSAT local search solver\n");
+  // printf ("c Sequential Standalone Version\n");
 #endif
   yals_banner ("c ");
 #ifdef PALSAT

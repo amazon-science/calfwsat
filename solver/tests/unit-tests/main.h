@@ -71,7 +71,7 @@ void resetsighandlers (void) {
 }
 
 void caughtsigmsg (int sig) {
-  printf ("c\nc [yalsat] CAUGHT SIGNAL %d\nc\n", sig);
+  printf ("c\nc [CaLFwSAT] CAUGHT SIGNAL %d\nc\n", sig);
   fflush (stdout);
 }
 
