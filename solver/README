@@ -12,7 +12,7 @@ Run Instructions:
 -----------------
  Run the default version with the command: 
  
- `./ddfw-card-sat -v --cutoff=<#flips> --maxtries=<#restarts> [--option=<val>] <Formula> [seed]`
+ `./CaLFwSAT -v --cutoff=<#flips> --maxtries=<#restarts> [--option=<val>] <Formula> [seed]`
 
  See outer Readme for more details.
 
