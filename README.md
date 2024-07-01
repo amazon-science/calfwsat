@@ -1,5 +1,7 @@
 ## CaLFwSAT
 
+_This software is only intended for development or test workloads, and you should not use it for production workloads._
+
 A stochastic local search SAT Solver with native support for cardinality constraints based on the DDFW (divide and distribute fixed weights) algorithm.
 DDFW is a stochastic local search (SLS) algorithm used for solving satisfiable formulas in propostional logic. The typical input for SLS solvers is conjunctive normal form (CNF), i.e., a conjunction of clauses, and each clause is a disjunction of literals. We extend the input format to accept a conjunction of clauses and cardinality constraints, e.g., a subset of pseudo-Boolean (PB) formulas, as well as weighted clauses and weighted constraints.
 
