@@ -2832,6 +2832,7 @@ static void yals_reset_cache (Yals * yals) {
 void yals_del (Yals * yals) {
   yals_reset_cache (yals);
   yals_reset_unsat (yals);
+  free (yals->curr);
   RELEASE (yals->cdb);
   RELEASE (yals->clause);
   RELEASE (yals->mark);
